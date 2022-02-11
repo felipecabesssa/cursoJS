@@ -6,9 +6,6 @@ function relogio() {
             timeZone: 'GMT'
         });
     }
-
-    console.log(criaHoraDosSegndos(10));
-
     const relogio = document.querySelector('.relogio');
 
     let segundos = 0;
