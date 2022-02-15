@@ -10,6 +10,7 @@ function criaCalculadora() {
 
     pressionaBackSpace() {
       this.display.addEventListener('keydown', e => {
+//                                             Usamos arrow function para não perder o this.
         if (e.keyCode === 8) {
           e.preventDefault();
           this.clearDisplay();
