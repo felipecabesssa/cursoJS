@@ -38,12 +38,7 @@ const total3 = numeros.reduce(function(acumulador, valor, indice, array) {
 
 console.log(total3);
 
-
-
-
-
-
-
+// Retorne a pessoa mais velha
 const pessoas = [
     { nome: 'Felipe', idade: 38 },
     { nome: 'Luiz', idade: 62 },
@@ -54,3 +49,10 @@ const pessoas = [
     { nome: 'Wallace', idade: 47 },
 ];
 
+console.log('\nRetorne a pessoa mais velha\n');
+
+const maisVelha = pessoas.reduce(function(acumulador, valor) {
+    if(acumulador.idade > valor.idade) return acumulador;
+    return valor;
+});
+console.log(maisVelha);
