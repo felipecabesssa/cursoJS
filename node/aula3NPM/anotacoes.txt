@@ -1,0 +1,21 @@
+- Rodar NPM (na pasta do projeto) - nmp init -y forma reduzida
+- Instalar pacote - npm install nome do pacote ex - npm install express
+- Atualizar npm - npm update
+- Mover o express para dev - npm install express --save-dev
+- Voltar para prod - npm install express --save-prod
+- Instalar coisas na versão expecifica - npm install express@2.1.0
+- Desinstalar - npm unintasll express
+- Listar pacotes instalados - npm ls
+- Instalar webpack - npm i webpack --save-dev
+- Ver pacotes desatualizados - npm outdated
+
+
+  versões
+
+2.     1.    0
+major  minor patch
+
+2.1.1
+2.2.0
+3.0.0 - critica pois a 2 pode parar de funcionar
+
