@@ -13,7 +13,5 @@ fs.writeFile(caminhoArquivo, 'olá JS\n', { flag: 'a' }); */
 
 
 module.exports = (caminho, dados) => {
-  fs.writeFile(caminho, dados, { flag: 'w', encoding: 'utf8' });
+    fs.writeFile(caminho, dados, { flag: 'w', encoding: 'utf8' });
 };
-
-

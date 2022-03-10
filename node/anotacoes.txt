@@ -1,0 +1,17 @@
+npm install
+npm install express
+
+rodar node - node arquivo.js
+
+instalar nodemon - npm install nodemon --save-dev
+rodar com nodemon - npx nodemon arquivo.js
+
+
+no package.json adicione o arquivo
+"scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+
+dai depois pra rodar - npm start
+assim ele atualiza o servidor automático a cada save
+
