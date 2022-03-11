@@ -6,7 +6,6 @@ const app = express();
 const mongoose = require('mongoose');
 mongoose.connect(process.env.CONNECTIONSTRING)
     .then(() => {
-        console.log('Conectei na base de dados');
         app.emit('pronto'); // Esse emit manda qualquer sinal que quisermos.
     })
     .catch(e => console.log(e));
