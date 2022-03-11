@@ -17,3 +17,6 @@ assim ele atualiza o servidor automático a cada save
 
 instalar ejs - npm i ejs
 
+pacote de proteção de senha (isola em arquivo) - npm install dotenv
+
+mongoose - modelagem dos dados e conexão com a base de dados - npm install mongoose
