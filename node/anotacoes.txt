@@ -15,3 +15,5 @@ no package.json adicione o arquivo
 dai depois pra rodar - npm start
 assim ele atualiza o servidor automático a cada save
 
+instalar ejs - npm i ejs
+
