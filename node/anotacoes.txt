@@ -2,6 +2,7 @@ npm install
 npm install express
 
 rodar node - node arquivo.js
+rodar webPack - npm run dev
 
 instalar nodemon - npm install nodemon --save-dev
 rodar com nodemon - npx nodemon arquivo.js
