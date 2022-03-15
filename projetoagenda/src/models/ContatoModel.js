@@ -17,12 +17,7 @@ function Contato(body) {
   this.contato = null;
 }
 
-Contato.buscaPorId = async function(id) {
-  if(typeof id !== 'string') return;
-  const user = await ContatoModel.findById(id);
-  return user;
-}
-
+// CRUD - CREATE --------------------------------------------------------
 Contato.prototype.register = async function() {
   this.valida();
   if(this.errors.length > 0) return;
@@ -60,11 +55,28 @@ Contato.prototype.cleanUp = function() {
   };
 }
 
+// CRUD - UPDATE --------------------------------------------------------
 Contato.prototype.edit = async function(id) {
   if(typeof id !== 'string') return;
   this.valida();
   if(this.errors.length > 0) return;
   this.contato = await ContatoModel.findByIdAndUpdate(id, this.body, { new: true });
 };
+
+// CRUD - READ --------------------------------------------------------
+// Métodos estáticos - não vai pro prototype e não usa o this.
+
+Contato.buscaPorId = async function(id) {
+  if(typeof id !== 'string') return;
+  const contato = await ContatoModel.findById(id);
+  return contato;
+}
+
+Contato.buscaContatos = async function() {
+  const contatos = await ContatoModel.find()
+    .sort({ criadoEm: -1 });
+// Ordenar   .sort({ valor/coluna p/ ordenar: e 1 para crescente e -1 decrescente });
+  return contatos;
+}
 
 module.exports = Contato;
